@@ -1,0 +1,25 @@
+@supports (animation-timeline: view()) {
+  @keyframes fade-in-on-enter--fade-out-on-exit {
+    entry 0% {
+      opacity: 0.6;
+      transform: scale(0.95);
+    }
+    entry 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    exit 0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    exit 100% {
+      opacity: 0.6;
+      transform: scale(0.95);
+    }
+  }
+
+  .post {
+    /* animation: ease-in-out fade-in-on-enter--fade-out-on-exit;
+    animation-timeline: view(); */
+  }
+}
